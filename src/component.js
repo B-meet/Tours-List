@@ -59,6 +59,7 @@ const Destinations = () => {
                     className='read-more'
                     onClick={() => {
                       setText(!text);
+                      setReadbtn(text ? "Read More" : "Read Less");
                     }}
                   >
                     {readbtn}

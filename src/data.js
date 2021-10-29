@@ -1,6 +1,7 @@
 export const destinations = [
   {
     id: 1,
+    place: "paris",
     price: "$1,995",
     title: "Best Of Paris In 7 Days Tour",
     image:
@@ -12,6 +13,7 @@ export const destinations = [
   },
   {
     id: 2,
+    place: "Ireland",
     price: "$3,099",
     title: "Best Of Ireland In 14 Days Tour",
     image:
@@ -23,29 +25,38 @@ export const destinations = [
   },
   {
     id: 3,
+    place: "Salzburg and Vienna",
     price: "$1,499",
     title: "Best Of Salzburg & Vienna In 8 Days Tour",
     image:
       "https://dl.airtable.com/.attachments/27f6cbfe631e303f98b97e9dafacf25b/6bbe2a07/vienna.jpeg",
     content:
       "Let's go where classical music, towering castles, and the-hills-are-alive scenery welcome you to the gemütlichkeit of Bavaria and opulence of Austria's Golden Age. Your Rick Steves guide will bring th",
+    moreContent:
+      "is region's rich history and culture to life in festive Munich, Baroque Salzburg, sparkling Lake Hallstatt, monastic Melk, the blue Danube, and royal Vienna — with cozy villages and alpine vistas all along the way. Join us for the Best of Munich, Salzburg & Vienna in 8 Days!",
   },
   {
     id: 4,
+    place: "Rome",
     price: "$2,499",
     title: "Best Of Rome In 7 Days Tour",
     image:
       "https://dl.airtable.com/.attachments/3efa7aa402d49c12b8769c581a96af42/d5b641e3/italy.jpeg",
     content:
       "Our Rome tour serves up Europe's most intoxicating brew of dazzling art, earth-shaking history, and city life with style. On this Rome vacation, your tour guide will resurrect the grandeur of ancient",
+    moreContent:
+      "Rome's Colosseum, Forum, Pantheon, and nearby Ostia Antica. From the Renaissance and Baroque eras, you'll marvel at St. Peter's Basilica, the Vatican Museums, Sistine Chapel, and Borghese Gallery. You'll also enjoy today's Rome, with neighborhood walking tours, memorable restaurants, and time to explore on your own. Join us for the Best of Rome in 7 Days!",
   },
   {
     id: 5,
+    place: "Poland",
     price: "$3,995",
     title: "Best Of Poland In 10 Days Tour",
     image:
       "https://dl.airtable.com/.attachments/3feee7a93af0f4f809312132090c9a80/58e3e8ec/poland.jpeg",
     content:
       "Starting in the colorful port city of Gdańsk, you'll escape the crowds and embrace the understated elegance of ready-for-prime-time Poland for 10 days. With an expert Rick Steves guide at your side, y",
+    moreContent:
+      "ou'll experience mighty Malbork castle, the cobbly-cute village of Toruń, Poland's contemporary capital of Warsaw, the spiritual Jasna Góra Monastery, and charming Kraków — Poland's finest city. In this land of surprises — so trendy and hip, yet steeped in history — there's so much to discover. Join us for the Best of Poland in 10 Days!",
   },
 ];
