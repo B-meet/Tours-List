@@ -1,10 +1,15 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { destinations } from "./data";
+import "./style.css";
 
 const Destinations = () => {
   const [heading, setHeading] = useState("our tours");
   const [data, setData] = useState(destinations);
+  const [readbtn, setReadbtn] = useState("Read More");
+  const [text, setText] = useState(false);
+
+  //the function for NOT INTERESTED button
 
   const remove = (id) => {
     setData(
@@ -14,9 +19,10 @@ const Destinations = () => {
     );
   };
 
-  const normal = () => {
-    setData(destinations);
-    setHeading("our tours");
+  //function to make the things as they were initially set
+
+  const reload = () => {
+    window.location.reload(false);
   };
 
   useEffect(() => {
@@ -27,37 +33,53 @@ const Destinations = () => {
 
   if (data.length > 0) {
     return (
-      <article>
-        <h1 className='main-heading'>{heading}</h1>
+      <div className='container'>
+        <h2 className='main-heading'>{heading}</h2>
         {data.map(
           ({ place, image, title, content, price, id, moreContent }) => {
             return (
-              <section key={id} className='card'>
+              <article key={id} className='card'>
                 <img
                   src={image}
                   alt={`scenery from ${place}`}
                   className='image'
                 />
-                <h4 className='title'>{title}</h4>
-                <span className='price'>
-                  <b>{price}</b>
-                </span>
-                <p className='content'>{content}</p>
-                <button className='read-more'>Read more</button>
-                <button className='btn' onClick={() => remove(id)}>
-                  {data.length}
-                </button>
-              </section>
+                <section className='card-content'>
+                  <div className='header'>
+                    <h4 className='title'>{title}</h4>
+                    <span className='price'>
+                      <b>{price}</b>
+                    </span>
+                  </div>
+                  <p className='content'>
+                    {content}
+                    {text && moreContent}
+                  </p>
+                  <button
+                    className='read-more'
+                    onClick={() => {
+                      setText(!text);
+                    }}
+                  >
+                    {readbtn}
+                  </button>
+                  <button className='btn' onClick={() => remove(id)}>
+                    Not Interested
+                  </button>
+                </section>
+              </article>
             );
           }
         )}
-      </article>
+      </div>
     );
   } else {
     return (
       <>
-        <h1 className='main-heading'>{heading}</h1>
-        <button onClick={() => normal()}>Refresh</button>
+        <h1 className='main-heading-2'>{heading}</h1>
+        <button className='refresh' onClick={() => reload()}>
+          Refresh
+        </button>
       </>
     );
   }

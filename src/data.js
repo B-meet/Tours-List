@@ -2,7 +2,6 @@ export const destinations = [
   {
     id: 1,
     price: "$1,995",
-    place: "Paris",
     title: "Best Of Paris In 7 Days Tour",
     image:
       "https://dl.airtable.com/.attachments/a0cd0702c443f31526267f38ea5314a1/2447eb7a/paris.jpg",
@@ -13,7 +12,6 @@ export const destinations = [
   },
   {
     id: 2,
-    place: "Ireland",
     price: "$3,099",
     title: "Best Of Ireland In 14 Days Tour",
     image:
@@ -26,7 +24,6 @@ export const destinations = [
   {
     id: 3,
     price: "$1,499",
-    place: "Salzburg & Vienna",
     title: "Best Of Salzburg & Vienna In 8 Days Tour",
     image:
       "https://dl.airtable.com/.attachments/27f6cbfe631e303f98b97e9dafacf25b/6bbe2a07/vienna.jpeg",
@@ -36,7 +33,6 @@ export const destinations = [
   {
     id: 4,
     price: "$2,499",
-    place: "Rome",
     title: "Best Of Rome In 7 Days Tour",
     image:
       "https://dl.airtable.com/.attachments/3efa7aa402d49c12b8769c581a96af42/d5b641e3/italy.jpeg",
@@ -46,7 +42,6 @@ export const destinations = [
   {
     id: 5,
     price: "$3,995",
-    place: "Poland",
     title: "Best Of Poland In 10 Days Tour",
     image:
       "https://dl.airtable.com/.attachments/3feee7a93af0f4f809312132090c9a80/58e3e8ec/poland.jpeg",
