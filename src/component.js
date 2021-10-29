@@ -60,7 +60,7 @@ const Destinations = () => {
                     onClick={() => {
                       setText(!text);
                       setReadbtn(text ? "Read More" : "Read Less");
-                    }}
+                    }} 
                   >
                     {readbtn}
                   </button>
